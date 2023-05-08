@@ -1,0 +1,9 @@
+langkah nya
+1. install tailwind nya
+    1. configurasiin buat tailwindnya(buka dokumentasinya)
+2. admin authentication
+    1. install next auth dan configurasinya
+    2. buat file .env
+    3. bikin google api credentials di google console
+    4. api nya masukkan ke  .env
+    5. lanjut set up sesuai yang ada di nextAuth.js
