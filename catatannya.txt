@@ -7,3 +7,8 @@ langkah nya
     3. bikin google api credentials di google console
     4. api nya masukkan ke  .env
     5. lanjut set up sesuai yang ada di nextAuth.js
+
+
+pelajari berikut ini
+
+1. useRouter()
