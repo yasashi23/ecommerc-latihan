@@ -2,11 +2,15 @@ import multiparty from 'multiparty'
 
 export default async function handle(req,res) {
   const form = new multiparty.Form()
-  form.parse(req,(err, field, files) =>{
-    if(err) throw err
+   new Promise((resolve, reject) => { 
+  form.parse(req,(err, fields, files) =>{
+    if(err) reject(err)
+    resolve({fields,files})
     console.log('length:',files.length)
-    res.json('ok')
+    console.log(fields)
+    return res.json('ok')
   })
+})
 
 }
 
